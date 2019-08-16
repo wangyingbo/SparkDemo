@@ -29,7 +29,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 
-@interface DefaultSparkViewFactoryData : NSObject<SparkViewFactoryData>
+@interface DefaultSparkViewFactoryData : SparkViewFactoryData<SparkViewFactoryData>
 @property (nonatomic, assign) CGSize size;
 @property (nonatomic, assign) NSInteger index;
 @end

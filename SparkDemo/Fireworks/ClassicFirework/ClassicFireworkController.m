@@ -7,6 +7,7 @@
 //
 
 #import "ClassicFireworkController.h"
+#import "ClassicFirework.h"
 
 @implementation ClassicFireworkMaker
 
@@ -50,6 +51,15 @@
         NSInteger idx = arc4random_uniform((uint32_t)(origins.count));
         CGPoint origin = pointAdd(value.CGPointValue, [self randomChangeVector:_maker.maxVectorChange]);
     }
+}
+
+- (Firework *)createFirework {
+    ClassicFirework *firework = [[ClassicFirework alloc] init];
+    firework.origin;
+    firework.sparkSize;
+    firework.scale;
+    
+    return firework;
 }
 
 - (CGVector)randomChangeVector:(CGFloat)max {
