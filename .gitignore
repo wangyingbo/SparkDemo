@@ -1,0 +1,17 @@
+syntax: glob
+.svn
+Thumbs.db
+flightcity.plist
+*.DS_Store
+FengbangB.xcworkspace/xcuserdata
+FengbangB.xcodeproj/xcuserdata
+Pods
+Podfile.lock
+Build
+*.orig
+*.rej
+.LSOverride
+UserInterfaceState.xcuserstate
+
+Podfile.lock
+project.pbxproj.resolve

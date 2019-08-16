@@ -1,0 +1,680 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D1099C9A230566CB00E447DA /* PublicTool.m in Sources */ = {isa = PBXBuildFile; fileRef = D1099C99230566CB00E447DA /* PublicTool.m */; };
+		D1099CA02305762100E447DA /* SparkView.m in Sources */ = {isa = PBXBuildFile; fileRef = D1099C9F2305762100E447DA /* SparkView.m */; };
+		D1099CA6230640B000E447DA /* PKProtocolExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = D1099CA3230640B000E447DA /* PKProtocolExtension.m */; };
+		D1349436230558C500C28EAD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D1349435230558C500C28EAD /* AppDelegate.m */; };
+		D1349439230558C500C28EAD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D1349438230558C500C28EAD /* ViewController.m */; };
+		D134943C230558C500C28EAD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D134943A230558C500C28EAD /* Main.storyboard */; };
+		D134943E230558C700C28EAD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D134943D230558C700C28EAD /* Assets.xcassets */; };
+		D1349441230558C700C28EAD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D134943F230558C700C28EAD /* LaunchScreen.storyboard */; };
+		D1349444230558C700C28EAD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D1349443230558C700C28EAD /* main.m */; };
+		D134944E230558C700C28EAD /* SparkDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D134944D230558C700C28EAD /* SparkDemoTests.m */; };
+		D1349459230558C800C28EAD /* SparkDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D1349458230558C800C28EAD /* SparkDemoUITests.m */; };
+		D134946A23055FB600C28EAD /* ClassicFireworkController.m in Sources */ = {isa = PBXBuildFile; fileRef = D134946923055FB600C28EAD /* ClassicFireworkController.m */; };
+		D1AA22DD230643FA007E0988 /* SparkTrajectory.m in Sources */ = {isa = PBXBuildFile; fileRef = D1AA22DC230643FA007E0988 /* SparkTrajectory.m */; };
+		D1AA22E3230651E0007E0988 /* Firework.m in Sources */ = {isa = PBXBuildFile; fileRef = D1AA22E2230651E0007E0988 /* Firework.m */; };
+		D1AA22E92306562D007E0988 /* FireworkSpark.m in Sources */ = {isa = PBXBuildFile; fileRef = D1AA22E82306562D007E0988 /* FireworkSpark.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D134944A230558C700C28EAD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D1349429230558C500C28EAD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D1349430230558C500C28EAD;
+			remoteInfo = SparkDemo;
+		};
+		D1349455230558C800C28EAD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D1349429230558C500C28EAD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D1349430230558C500C28EAD;
+			remoteInfo = SparkDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D1099C98230566CB00E447DA /* PublicTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PublicTool.h; sourceTree = "<group>"; };
+		D1099C99230566CB00E447DA /* PublicTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PublicTool.m; sourceTree = "<group>"; };
+		D1099C9E2305762100E447DA /* SparkView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SparkView.h; sourceTree = "<group>"; };
+		D1099C9F2305762100E447DA /* SparkView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SparkView.m; sourceTree = "<group>"; };
+		D1099CA3230640B000E447DA /* PKProtocolExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKProtocolExtension.m; sourceTree = "<group>"; };
+		D1099CA4230640B000E447DA /* PKProtocolExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKProtocolExtension.h; sourceTree = "<group>"; };
+		D1099CA5230640B000E447DA /* ProtocolKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProtocolKit.h; sourceTree = "<group>"; };
+		D1349431230558C500C28EAD /* SparkDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SparkDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1349434230558C500C28EAD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D1349435230558C500C28EAD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D1349437230558C500C28EAD /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		D1349438230558C500C28EAD /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D134943B230558C500C28EAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D134943D230558C700C28EAD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D1349440230558C700C28EAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D1349442230558C700C28EAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D1349443230558C700C28EAD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D1349449230558C700C28EAD /* SparkDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SparkDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D134944D230558C700C28EAD /* SparkDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SparkDemoTests.m; sourceTree = "<group>"; };
+		D134944F230558C700C28EAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D1349454230558C800C28EAD /* SparkDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SparkDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1349458230558C800C28EAD /* SparkDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SparkDemoUITests.m; sourceTree = "<group>"; };
+		D134945A230558C800C28EAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D134946823055FB600C28EAD /* ClassicFireworkController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClassicFireworkController.h; sourceTree = "<group>"; };
+		D134946923055FB600C28EAD /* ClassicFireworkController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClassicFireworkController.m; sourceTree = "<group>"; };
+		D1AA22DB230643FA007E0988 /* SparkTrajectory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SparkTrajectory.h; sourceTree = "<group>"; };
+		D1AA22DC230643FA007E0988 /* SparkTrajectory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SparkTrajectory.m; sourceTree = "<group>"; };
+		D1AA22DE230644D4007E0988 /* SparkTrajectory+Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SparkTrajectory+Private.h"; sourceTree = "<group>"; };
+		D1AA22E1230651E0007E0988 /* Firework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Firework.h; sourceTree = "<group>"; };
+		D1AA22E2230651E0007E0988 /* Firework.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Firework.m; sourceTree = "<group>"; };
+		D1AA22E4230651FD007E0988 /* Firework+Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Firework+Private.h"; sourceTree = "<group>"; };
+		D1AA22E72306562D007E0988 /* FireworkSpark.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FireworkSpark.h; sourceTree = "<group>"; };
+		D1AA22E82306562D007E0988 /* FireworkSpark.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FireworkSpark.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D134942E230558C500C28EAD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1349446230558C700C28EAD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1349451230558C700C28EAD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D1099C9B23056DB700E447DA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D1AA22E1230651E0007E0988 /* Firework.h */,
+				D1AA22E2230651E0007E0988 /* Firework.m */,
+				D1AA22E4230651FD007E0988 /* Firework+Private.h */,
+				D1AA22E72306562D007E0988 /* FireworkSpark.h */,
+				D1AA22E82306562D007E0988 /* FireworkSpark.m */,
+				D1099C9E2305762100E447DA /* SparkView.h */,
+				D1099C9F2305762100E447DA /* SparkView.m */,
+				D1AA22DB230643FA007E0988 /* SparkTrajectory.h */,
+				D1AA22DC230643FA007E0988 /* SparkTrajectory.m */,
+				D1AA22DE230644D4007E0988 /* SparkTrajectory+Private.h */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D1099C9C23056DBF00E447DA /* SparkViews */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SparkViews;
+			sourceTree = "<group>";
+		};
+		D1099CA2230640B000E447DA /* ProtocolKit */ = {
+			isa = PBXGroup;
+			children = (
+				D1099CA3230640B000E447DA /* PKProtocolExtension.m */,
+				D1099CA4230640B000E447DA /* PKProtocolExtension.h */,
+				D1099CA5230640B000E447DA /* ProtocolKit.h */,
+			);
+			path = ProtocolKit;
+			sourceTree = "<group>";
+		};
+		D1349428230558C500C28EAD = {
+			isa = PBXGroup;
+			children = (
+				D1349433230558C500C28EAD /* SparkDemo */,
+				D134944C230558C700C28EAD /* SparkDemoTests */,
+				D1349457230558C800C28EAD /* SparkDemoUITests */,
+				D1349432230558C500C28EAD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D1349432230558C500C28EAD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D1349431230558C500C28EAD /* SparkDemo.app */,
+				D1349449230558C700C28EAD /* SparkDemoTests.xctest */,
+				D1349454230558C800C28EAD /* SparkDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D1349433230558C500C28EAD /* SparkDemo */ = {
+			isa = PBXGroup;
+			children = (
+				D1099CA2230640B000E447DA /* ProtocolKit */,
+				D134946623055F8A00C28EAD /* Fireworks */,
+				D1349434230558C500C28EAD /* AppDelegate.h */,
+				D1349435230558C500C28EAD /* AppDelegate.m */,
+				D1349437230558C500C28EAD /* ViewController.h */,
+				D1349438230558C500C28EAD /* ViewController.m */,
+				D134943A230558C500C28EAD /* Main.storyboard */,
+				D134943D230558C700C28EAD /* Assets.xcassets */,
+				D134943F230558C700C28EAD /* LaunchScreen.storyboard */,
+				D1349442230558C700C28EAD /* Info.plist */,
+				D1349443230558C700C28EAD /* main.m */,
+			);
+			path = SparkDemo;
+			sourceTree = "<group>";
+		};
+		D134944C230558C700C28EAD /* SparkDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				D134944D230558C700C28EAD /* SparkDemoTests.m */,
+				D134944F230558C700C28EAD /* Info.plist */,
+			);
+			path = SparkDemoTests;
+			sourceTree = "<group>";
+		};
+		D1349457230558C800C28EAD /* SparkDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D1349458230558C800C28EAD /* SparkDemoUITests.m */,
+				D134945A230558C800C28EAD /* Info.plist */,
+			);
+			path = SparkDemoUITests;
+			sourceTree = "<group>";
+		};
+		D134946623055F8A00C28EAD /* Fireworks */ = {
+			isa = PBXGroup;
+			children = (
+				D1099C9C23056DBF00E447DA /* SparkViews */,
+				D1099C9B23056DB700E447DA /* Model */,
+				D173288B230565B000A6DA99 /* SystemExtensions */,
+				D134946723055F9200C28EAD /* ClassicFirework */,
+			);
+			path = Fireworks;
+			sourceTree = "<group>";
+		};
+		D134946723055F9200C28EAD /* ClassicFirework */ = {
+			isa = PBXGroup;
+			children = (
+				D134946823055FB600C28EAD /* ClassicFireworkController.h */,
+				D134946923055FB600C28EAD /* ClassicFireworkController.m */,
+			);
+			path = ClassicFirework;
+			sourceTree = "<group>";
+		};
+		D173288B230565B000A6DA99 /* SystemExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				D1099C98230566CB00E447DA /* PublicTool.h */,
+				D1099C99230566CB00E447DA /* PublicTool.m */,
+			);
+			path = SystemExtensions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D1349430230558C500C28EAD /* SparkDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D134945D230558C800C28EAD /* Build configuration list for PBXNativeTarget "SparkDemo" */;
+			buildPhases = (
+				D134942D230558C500C28EAD /* Sources */,
+				D134942E230558C500C28EAD /* Frameworks */,
+				D134942F230558C500C28EAD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SparkDemo;
+			productName = SparkDemo;
+			productReference = D1349431230558C500C28EAD /* SparkDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D1349448230558C700C28EAD /* SparkDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D1349460230558C800C28EAD /* Build configuration list for PBXNativeTarget "SparkDemoTests" */;
+			buildPhases = (
+				D1349445230558C700C28EAD /* Sources */,
+				D1349446230558C700C28EAD /* Frameworks */,
+				D1349447230558C700C28EAD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D134944B230558C700C28EAD /* PBXTargetDependency */,
+			);
+			name = SparkDemoTests;
+			productName = SparkDemoTests;
+			productReference = D1349449230558C700C28EAD /* SparkDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D1349453230558C700C28EAD /* SparkDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D1349463230558C800C28EAD /* Build configuration list for PBXNativeTarget "SparkDemoUITests" */;
+			buildPhases = (
+				D1349450230558C700C28EAD /* Sources */,
+				D1349451230558C700C28EAD /* Frameworks */,
+				D1349452230558C700C28EAD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D1349456230558C800C28EAD /* PBXTargetDependency */,
+			);
+			name = SparkDemoUITests;
+			productName = SparkDemoUITests;
+			productReference = D1349454230558C800C28EAD /* SparkDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D1349429230558C500C28EAD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "王颖博";
+				TargetAttributes = {
+					D1349430230558C500C28EAD = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					D1349448230558C700C28EAD = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = D1349430230558C500C28EAD;
+					};
+					D1349453230558C700C28EAD = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = D1349430230558C500C28EAD;
+					};
+				};
+			};
+			buildConfigurationList = D134942C230558C500C28EAD /* Build configuration list for PBXProject "SparkDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D1349428230558C500C28EAD;
+			productRefGroup = D1349432230558C500C28EAD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D1349430230558C500C28EAD /* SparkDemo */,
+				D1349448230558C700C28EAD /* SparkDemoTests */,
+				D1349453230558C700C28EAD /* SparkDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D134942F230558C500C28EAD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1349441230558C700C28EAD /* LaunchScreen.storyboard in Resources */,
+				D134943E230558C700C28EAD /* Assets.xcassets in Resources */,
+				D134943C230558C500C28EAD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1349447230558C700C28EAD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1349452230558C700C28EAD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D134942D230558C500C28EAD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1099CA02305762100E447DA /* SparkView.m in Sources */,
+				D1AA22E3230651E0007E0988 /* Firework.m in Sources */,
+				D1AA22E92306562D007E0988 /* FireworkSpark.m in Sources */,
+				D1099CA6230640B000E447DA /* PKProtocolExtension.m in Sources */,
+				D1099C9A230566CB00E447DA /* PublicTool.m in Sources */,
+				D1349439230558C500C28EAD /* ViewController.m in Sources */,
+				D1AA22DD230643FA007E0988 /* SparkTrajectory.m in Sources */,
+				D134946A23055FB600C28EAD /* ClassicFireworkController.m in Sources */,
+				D1349444230558C700C28EAD /* main.m in Sources */,
+				D1349436230558C500C28EAD /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1349445230558C700C28EAD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D134944E230558C700C28EAD /* SparkDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1349450230558C700C28EAD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1349459230558C800C28EAD /* SparkDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D134944B230558C700C28EAD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D1349430230558C500C28EAD /* SparkDemo */;
+			targetProxy = D134944A230558C700C28EAD /* PBXContainerItemProxy */;
+		};
+		D1349456230558C800C28EAD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D1349430230558C500C28EAD /* SparkDemo */;
+			targetProxy = D1349455230558C800C28EAD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D134943A230558C500C28EAD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D134943B230558C500C28EAD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D134943F230558C700C28EAD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D1349440230558C700C28EAD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D134945B230558C800C28EAD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D134945C230558C800C28EAD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D134945E230558C800C28EAD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2T9CHG78WE;
+				INFOPLIST_FILE = SparkDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = top.wangyingbo.www.SparkDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D134945F230558C800C28EAD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2T9CHG78WE;
+				INFOPLIST_FILE = SparkDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = top.wangyingbo.www.SparkDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D1349461230558C800C28EAD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2T9CHG78WE;
+				INFOPLIST_FILE = SparkDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = top.wangyingbo.www.SparkDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SparkDemo.app/SparkDemo";
+			};
+			name = Debug;
+		};
+		D1349462230558C800C28EAD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2T9CHG78WE;
+				INFOPLIST_FILE = SparkDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = top.wangyingbo.www.SparkDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SparkDemo.app/SparkDemo";
+			};
+			name = Release;
+		};
+		D1349464230558C800C28EAD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2T9CHG78WE;
+				INFOPLIST_FILE = SparkDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = top.wangyingbo.www.SparkDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SparkDemo;
+			};
+			name = Debug;
+		};
+		D1349465230558C800C28EAD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2T9CHG78WE;
+				INFOPLIST_FILE = SparkDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = top.wangyingbo.www.SparkDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SparkDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D134942C230558C500C28EAD /* Build configuration list for PBXProject "SparkDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D134945B230558C800C28EAD /* Debug */,
+				D134945C230558C800C28EAD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D134945D230558C800C28EAD /* Build configuration list for PBXNativeTarget "SparkDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D134945E230558C800C28EAD /* Debug */,
+				D134945F230558C800C28EAD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D1349460230558C800C28EAD /* Build configuration list for PBXNativeTarget "SparkDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D1349461230558C800C28EAD /* Debug */,
+				D1349462230558C800C28EAD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D1349463230558C800C28EAD /* Build configuration list for PBXNativeTarget "SparkDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D1349464230558C800C28EAD /* Debug */,
+				D1349465230558C800C28EAD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D1349429230558C500C28EAD /* Project object */;
+}
