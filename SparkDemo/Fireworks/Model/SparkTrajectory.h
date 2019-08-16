@@ -21,7 +21,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (UIBezierPath *)path;
 @end
 
-@interface SparkTrajectory : NSObject
+@interface SparkTrajectory : NSObject<SparkTrajectory>
 
 - (instancetype)scale:(CGFloat)value;
 - (instancetype)flip;

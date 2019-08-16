@@ -15,6 +15,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign) CGPoint origin;
 @property (nonatomic, assign) CGFloat scale;
 @property (nonatomic, assign) CGSize sparkSize;
+@property (nonatomic, strong) SparkTrajectoryFactory *trajectoryFactory;
+@property (nonatomic, strong) SparkViewFactory *sparkViewFactory;
 @end
 
 NS_ASSUME_NONNULL_END

@@ -22,6 +22,13 @@
 		D1AA22DD230643FA007E0988 /* SparkTrajectory.m in Sources */ = {isa = PBXBuildFile; fileRef = D1AA22DC230643FA007E0988 /* SparkTrajectory.m */; };
 		D1AA22E3230651E0007E0988 /* Firework.m in Sources */ = {isa = PBXBuildFile; fileRef = D1AA22E2230651E0007E0988 /* Firework.m */; };
 		D1AA22E92306562D007E0988 /* FireworkSpark.m in Sources */ = {isa = PBXBuildFile; fileRef = D1AA22E82306562D007E0988 /* FireworkSpark.m */; };
+		D1AA232E230686EB007E0988 /* SparkTrajectoryFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = D1AA232D230686EB007E0988 /* SparkTrajectoryFactory.m */; };
+		D1AA233123068780007E0988 /* SparkViewAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = D1AA233023068780007E0988 /* SparkViewAnimator.m */; };
+		D1AA233423068BC8007E0988 /* SparkViewFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = D1AA233323068BC8007E0988 /* SparkViewFactory.m */; };
+		D1AA233723069018007E0988 /* ClassicFireworkAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = D1AA233623069018007E0988 /* ClassicFireworkAnimator.m */; };
+		D1AA233A230695F0007E0988 /* ClassicSparkTrajectoryFactoryProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = D1AA2339230695F0007E0988 /* ClassicSparkTrajectoryFactoryProtocol.m */; };
+		D1AA233D230696BC007E0988 /* ClassicSparkTrajectoryFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = D1AA233C230696BC007E0988 /* ClassicSparkTrajectoryFactory.m */; };
+		D1AA234023069D21007E0988 /* ClassicFirework.m in Sources */ = {isa = PBXBuildFile; fileRef = D1AA233F23069D21007E0988 /* ClassicFirework.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +82,20 @@
 		D1AA22E4230651FD007E0988 /* Firework+Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Firework+Private.h"; sourceTree = "<group>"; };
 		D1AA22E72306562D007E0988 /* FireworkSpark.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FireworkSpark.h; sourceTree = "<group>"; };
 		D1AA22E82306562D007E0988 /* FireworkSpark.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FireworkSpark.m; sourceTree = "<group>"; };
+		D1AA232C230686EB007E0988 /* SparkTrajectoryFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SparkTrajectoryFactory.h; sourceTree = "<group>"; };
+		D1AA232D230686EB007E0988 /* SparkTrajectoryFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SparkTrajectoryFactory.m; sourceTree = "<group>"; };
+		D1AA232F23068780007E0988 /* SparkViewAnimator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SparkViewAnimator.h; sourceTree = "<group>"; };
+		D1AA233023068780007E0988 /* SparkViewAnimator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SparkViewAnimator.m; sourceTree = "<group>"; };
+		D1AA233223068BC8007E0988 /* SparkViewFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SparkViewFactory.h; sourceTree = "<group>"; };
+		D1AA233323068BC8007E0988 /* SparkViewFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SparkViewFactory.m; sourceTree = "<group>"; };
+		D1AA233523069018007E0988 /* ClassicFireworkAnimator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClassicFireworkAnimator.h; sourceTree = "<group>"; };
+		D1AA233623069018007E0988 /* ClassicFireworkAnimator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClassicFireworkAnimator.m; sourceTree = "<group>"; };
+		D1AA2338230695F0007E0988 /* ClassicSparkTrajectoryFactoryProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClassicSparkTrajectoryFactoryProtocol.h; sourceTree = "<group>"; };
+		D1AA2339230695F0007E0988 /* ClassicSparkTrajectoryFactoryProtocol.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClassicSparkTrajectoryFactoryProtocol.m; sourceTree = "<group>"; };
+		D1AA233B230696BC007E0988 /* ClassicSparkTrajectoryFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClassicSparkTrajectoryFactory.h; sourceTree = "<group>"; };
+		D1AA233C230696BC007E0988 /* ClassicSparkTrajectoryFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClassicSparkTrajectoryFactory.m; sourceTree = "<group>"; };
+		D1AA233E23069D21007E0988 /* ClassicFirework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClassicFirework.h; sourceTree = "<group>"; };
+		D1AA233F23069D21007E0988 /* ClassicFirework.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClassicFirework.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +136,12 @@
 				D1AA22DB230643FA007E0988 /* SparkTrajectory.h */,
 				D1AA22DC230643FA007E0988 /* SparkTrajectory.m */,
 				D1AA22DE230644D4007E0988 /* SparkTrajectory+Private.h */,
+				D1AA232C230686EB007E0988 /* SparkTrajectoryFactory.h */,
+				D1AA232D230686EB007E0988 /* SparkTrajectoryFactory.m */,
+				D1AA232F23068780007E0988 /* SparkViewAnimator.h */,
+				D1AA233023068780007E0988 /* SparkViewAnimator.m */,
+				D1AA233223068BC8007E0988 /* SparkViewFactory.h */,
+				D1AA233323068BC8007E0988 /* SparkViewFactory.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -206,8 +233,16 @@
 		D134946723055F9200C28EAD /* ClassicFirework */ = {
 			isa = PBXGroup;
 			children = (
+				D1AA233E23069D21007E0988 /* ClassicFirework.h */,
+				D1AA233F23069D21007E0988 /* ClassicFirework.m */,
+				D1AA233523069018007E0988 /* ClassicFireworkAnimator.h */,
+				D1AA233623069018007E0988 /* ClassicFireworkAnimator.m */,
 				D134946823055FB600C28EAD /* ClassicFireworkController.h */,
 				D134946923055FB600C28EAD /* ClassicFireworkController.m */,
+				D1AA233B230696BC007E0988 /* ClassicSparkTrajectoryFactory.h */,
+				D1AA233C230696BC007E0988 /* ClassicSparkTrajectoryFactory.m */,
+				D1AA2338230695F0007E0988 /* ClassicSparkTrajectoryFactoryProtocol.h */,
+				D1AA2339230695F0007E0988 /* ClassicSparkTrajectoryFactoryProtocol.m */,
 			);
 			path = ClassicFirework;
 			sourceTree = "<group>";
@@ -359,7 +394,14 @@
 				D1349439230558C500C28EAD /* ViewController.m in Sources */,
 				D1AA22DD230643FA007E0988 /* SparkTrajectory.m in Sources */,
 				D134946A23055FB600C28EAD /* ClassicFireworkController.m in Sources */,
+				D1AA233723069018007E0988 /* ClassicFireworkAnimator.m in Sources */,
+				D1AA233A230695F0007E0988 /* ClassicSparkTrajectoryFactoryProtocol.m in Sources */,
 				D1349444230558C700C28EAD /* main.m in Sources */,
+				D1AA233423068BC8007E0988 /* SparkViewFactory.m in Sources */,
+				D1AA233D230696BC007E0988 /* ClassicSparkTrajectoryFactory.m in Sources */,
+				D1AA233123068780007E0988 /* SparkViewAnimator.m in Sources */,
+				D1AA232E230686EB007E0988 /* SparkTrajectoryFactory.m in Sources */,
+				D1AA234023069D21007E0988 /* ClassicFirework.m in Sources */,
 				D1349436230558C500C28EAD /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
