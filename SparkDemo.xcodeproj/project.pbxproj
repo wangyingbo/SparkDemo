@@ -19,6 +19,8 @@
 		D1349459230558C800C28EAD /* SparkDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D1349458230558C800C28EAD /* SparkDemoUITests.m */; };
 		D134946A23055FB600C28EAD /* ClassicFireworkController.m in Sources */ = {isa = PBXBuildFile; fileRef = D134946923055FB600C28EAD /* ClassicFireworkController.m */; };
 		D154AF92230A79C0008FF022 /* DemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D154AF91230A79C0008FF022 /* DemoVC.m */; };
+		D154AF96230A7F6A008FF022 /* FireworkSparkScheduler.m in Sources */ = {isa = PBXBuildFile; fileRef = D154AF95230A7F6A008FF022 /* FireworkSparkScheduler.m */; };
+		D154AF99230A8058008FF022 /* WeakTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = D154AF98230A8058008FF022 /* WeakTimer.m */; };
 		D1AA22DD230643FA007E0988 /* SparkTrajectory.m in Sources */ = {isa = PBXBuildFile; fileRef = D1AA22DC230643FA007E0988 /* SparkTrajectory.m */; };
 		D1AA22E3230651E0007E0988 /* Firework.m in Sources */ = {isa = PBXBuildFile; fileRef = D1AA22E2230651E0007E0988 /* Firework.m */; };
 		D1AA22E92306562D007E0988 /* FireworkSpark.m in Sources */ = {isa = PBXBuildFile; fileRef = D1AA22E82306562D007E0988 /* FireworkSpark.m */; };
@@ -78,6 +80,10 @@
 		D154AF90230A79C0008FF022 /* DemoVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DemoVC.h; sourceTree = "<group>"; };
 		D154AF91230A79C0008FF022 /* DemoVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoVC.m; sourceTree = "<group>"; };
 		D154AF93230A7A12008FF022 /* SparkHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SparkHeader.h; sourceTree = "<group>"; };
+		D154AF94230A7F6A008FF022 /* FireworkSparkScheduler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FireworkSparkScheduler.h; sourceTree = "<group>"; };
+		D154AF95230A7F6A008FF022 /* FireworkSparkScheduler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FireworkSparkScheduler.m; sourceTree = "<group>"; };
+		D154AF97230A8058008FF022 /* WeakTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeakTimer.h; sourceTree = "<group>"; };
+		D154AF98230A8058008FF022 /* WeakTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeakTimer.m; sourceTree = "<group>"; };
 		D1AA22DB230643FA007E0988 /* SparkTrajectory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SparkTrajectory.h; sourceTree = "<group>"; };
 		D1AA22DC230643FA007E0988 /* SparkTrajectory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SparkTrajectory.m; sourceTree = "<group>"; };
 		D1AA22DE230644D4007E0988 /* SparkTrajectory+Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SparkTrajectory+Private.h"; sourceTree = "<group>"; };
@@ -147,6 +153,8 @@
 				D1099C9F2305762100E447DA /* SparkView.m */,
 				D1AA22DB230643FA007E0988 /* SparkTrajectory.h */,
 				D1AA22DC230643FA007E0988 /* SparkTrajectory.m */,
+				D154AF94230A7F6A008FF022 /* FireworkSparkScheduler.h */,
+				D154AF95230A7F6A008FF022 /* FireworkSparkScheduler.m */,
 				D1AA22DE230644D4007E0988 /* SparkTrajectory+Private.h */,
 				D1AA232C230686EB007E0988 /* SparkTrajectoryFactory.h */,
 				D1AA232D230686EB007E0988 /* SparkTrajectoryFactory.m */,
@@ -203,12 +211,12 @@
 				D1349438230558C500C28EAD /* ViewController.m */,
 				D154AF90230A79C0008FF022 /* DemoVC.h */,
 				D154AF91230A79C0008FF022 /* DemoVC.m */,
+				D154AF93230A7A12008FF022 /* SparkHeader.h */,
 				D134943A230558C500C28EAD /* Main.storyboard */,
 				D134943D230558C700C28EAD /* Assets.xcassets */,
 				D134943F230558C700C28EAD /* LaunchScreen.storyboard */,
 				D1349442230558C700C28EAD /* Info.plist */,
 				D1349443230558C700C28EAD /* main.m */,
-				D154AF93230A7A12008FF022 /* SparkHeader.h */,
 			);
 			path = SparkDemo;
 			sourceTree = "<group>";
@@ -262,6 +270,8 @@
 		D173288B230565B000A6DA99 /* SystemExtensions */ = {
 			isa = PBXGroup;
 			children = (
+				D154AF97230A8058008FF022 /* WeakTimer.h */,
+				D154AF98230A8058008FF022 /* WeakTimer.m */,
 				D1099C98230566CB00E447DA /* PublicTool.h */,
 				D1099C99230566CB00E447DA /* PublicTool.m */,
 			);
@@ -400,11 +410,13 @@
 			files = (
 				D1099CA02305762100E447DA /* SparkView.m in Sources */,
 				D1AA22E3230651E0007E0988 /* Firework.m in Sources */,
+				D154AF96230A7F6A008FF022 /* FireworkSparkScheduler.m in Sources */,
 				D1AA2343230A4494007E0988 /* CircleColorSparkView.m in Sources */,
 				D1AA22E92306562D007E0988 /* FireworkSpark.m in Sources */,
 				D1099C9A230566CB00E447DA /* PublicTool.m in Sources */,
 				D1349439230558C500C28EAD /* ViewController.m in Sources */,
 				D1AA22DD230643FA007E0988 /* SparkTrajectory.m in Sources */,
+				D154AF99230A8058008FF022 /* WeakTimer.m in Sources */,
 				D134946A23055FB600C28EAD /* ClassicFireworkController.m in Sources */,
 				D1AA233723069018007E0988 /* ClassicFireworkAnimator.m in Sources */,
 				D1AA233A230695F0007E0988 /* ClassicSparkTrajectoryFactoryProtocol.m in Sources */,
