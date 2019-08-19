@@ -9,11 +9,12 @@
 //  https://github.com/tomkowz/fireworks
 
 #import "ViewController.h"
-#import "ClassicFireworkController.h"
+#import "DemoVC.h"
 
+@interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
+@property (nonatomic, strong) UITableView *tableView;
+@property (nonatomic, copy) NSArray *dataArray;
 
-@interface ViewController ()
-@property (nonatomic, strong) ClassicFireworkController *fireworkController;
 @end
 
 @implementation ViewController
@@ -23,61 +24,80 @@
     
     self.view.backgroundColor = [UIColor whiteColor];
     
-    [self configUI];
-    
-    [self configData];
+    [self configTableView];
 }
 
 #pragma mark - configUI
+- (UITableView *)tableView {
+    if (!_tableView) {
+        UITableView *tableView = [[UITableView alloc]initWithFrame:self.view.bounds style:UITableViewStyleGrouped];
+        tableView.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
+        tableView.separatorInset = UIEdgeInsetsMake(0.5, 14, 0, 0);
+        tableView.keyboardDismissMode = UIScrollViewKeyboardDismissModeInteractive;
+        [self.view addSubview:tableView];
+        _tableView = tableView;
+    }
+    return _tableView;
+}
 
-- (void)configUI {
-    CGFloat w = 150.f;
-    CGFloat h = 50.f;
-    UIColor *color = [UIColor colorWithRed:0.42 green:0.58 blue:0.98 alpha:1];
-    UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(FULL_SCREEN_WIDTH/2 - w/2, FULL_SCREEN_HEIGHT/2 - h/2, w, h)];
-    [button setTitle:@"🍦🍰🍎" forState:UIControlStateNormal];
-    [button setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    button.layer.cornerRadius = 5;
-    button.backgroundColor = color;
-    [button addTarget:self action:@selector(buttonClick:) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:button];
-    
-    CALayer *layer = button.layer;
-    layer.shadowColor = [UIColor blackColor].CGColor;
-    layer.shadowOffset = CGSizeMake(0, 10.);
-    layer.shadowRadius = 6.0;
-    layer.shadowOpacity = 0.3;
-    CGFloat shadowWidth = layer.bounds.size.width * 0.9;
-    CGRect shadowRect = CGRectMake((0 + (layer.bounds.size.width - shadowWidth) / 2.0), 0, shadowWidth, layer.bounds.size.height);
-    layer.shadowPath = [UIBezierPath bezierPathWithRect:shadowRect].CGPath;
-    layer.zPosition = 2;
+- (void)configTableView {
+    self.title = @"Spark Demo";
+    self.tableView.delegate = self;
+    self.tableView.dataSource = self;
 }
 
 #pragma mark - configData
-
-- (void)configData {
-    
-}
-
-- (ClassicFireworkController *)fireworkController {
-    if (!_fireworkController) {
-        ClassicFireworkController *fireworkController = [[ClassicFireworkController alloc] init];
-        _fireworkController = fireworkController;
+- (NSArray *)dataArray {
+    if (!_dataArray) {
+        NSArray *arr = @[
+             [TitleItem create:SparkTypeClassic name:@"classic"],
+             [TitleItem create:SparkTypeFountain name:@"fountain"],
+                         ];
+        _dataArray = arr;
     }
-    return _fireworkController;
+    return _dataArray;
 }
 
-#pragma mark - actions
-
-- (void)buttonClick:(UIButton *)sender {
-    
-    [self.fireworkController addFireworks:^(ClassicFireworkMaker * _Nonnull maker) {
-        maker.sparksCount = 8;
-        maker.sparkSize = CGSizeMake(10, 10);
-        maker.fireworksCount = 1;
-        maker.animationDuration = .8;
-    } toView:sender];
-    
+#pragma mark - delegate
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
 }
 
+#pragma mark - UITableViewDataSource
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return self.dataArray.count;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([self class])];
+    if (!cell) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:NSStringFromClass(self.class)];
+    }
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    
+    TitleItem *item = self.dataArray[indexPath.row];
+    cell.textLabel.text = item.name?:@"";
+    
+    return cell;
+}
+
+#pragma mark - UITableViewDelegate
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    TitleItem *item = self.dataArray[indexPath.row];
+    DemoVC *vc = [[DemoVC alloc] init];
+    vc.type = item.tag.integerValue;
+    vc.name = item.name?:@"";
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
+@end
+
+
+@implementation TitleItem
++ (instancetype)create:(NSInteger)tag name:(NSString *)name {
+    TitleItem *item = [[TitleItem alloc] init];
+    item.tag = [NSNumber numberWithInteger:tag];
+    item.name = name;
+    return item;
+}
 @end

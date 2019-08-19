@@ -8,9 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-#define FULL_SCREEN_WIDTH ([UIScreen mainScreen].bounds.size.width)
-#define FULL_SCREEN_HEIGHT ([UIScreen mainScreen].bounds.size.height)
-
+@interface TitleItem : NSObject
+@property (nonatomic, copy) NSString *name;
+@property (nonatomic, strong) NSNumber *tag;
++ (instancetype)create:(NSInteger)tag name:(NSString *)name;
+@end
 
 @interface ViewController : UIViewController
 
