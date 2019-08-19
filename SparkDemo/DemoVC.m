@@ -9,11 +9,13 @@
 #import "DemoVC.h"
 #import "ClassicFireworkController.h"
 #import "FountainFireworkController.h"
-
-
+#import "PusheenFountainFireworkController.h"
+#import "DuckFountainFireworkController.h"
 @interface DemoVC ()
 @property (nonatomic, strong) ClassicFireworkController *classicFirework;
 @property (nonatomic, strong) FountainFireworkController *fountainFirework;
+@property (nonatomic, strong) PusheenFountainFireworkController *pusheenFountainFirework;
+@property (nonatomic, strong) DuckFountainFireworkController *duckFountainFirework;
 
 @end
 
@@ -77,6 +79,22 @@
     return _fountainFirework;
 }
 
+- (PusheenFountainFireworkController *)pusheenFountainFirework {
+    if (!_pusheenFountainFirework) {
+        PusheenFountainFireworkController *pusheenFountainFirework = [[PusheenFountainFireworkController alloc] init];
+        _pusheenFountainFirework = pusheenFountainFirework;
+    }
+    return _pusheenFountainFirework;
+}
+
+- (DuckFountainFireworkController *)duckFountainFirework {
+    if (!_duckFountainFirework) {
+        DuckFountainFireworkController *duckFountainFirework = [[DuckFountainFireworkController alloc] init];
+        _duckFountainFirework = duckFountainFirework;
+    }
+    return _duckFountainFirework;
+}
+
 #pragma mark - actions
 
 - (void)buttonClick:(UIButton *)sender {
@@ -90,6 +108,16 @@
         case SparkTypeFountain:
         {
             [self fountain:sender];
+        }
+            break;
+        case SparkTypePusheen:
+        {
+            [self pusheen:sender];
+        }
+            break;
+        case SparkTypeDuck:
+        {
+            [self duck:sender];
         }
             break;
             
@@ -112,6 +140,20 @@
     [self.fountainFirework addFireworks:^(FountainFireworkMaker * _Nonnull maker) {
         maker.sparksCount = 10;
         maker.sparkSize = CGSizeMake(10.f, 10.f);
+    } toView:sender];
+}
+
+- (void)pusheen:(UIButton *)sender {
+    [self.pusheenFountainFirework addFireworks:^(FountainFireworkMaker * _Nonnull maker) {
+        maker.sparksCount = 8;
+        maker.sparkSize = CGSizeMake(20.f, 20.f);
+    } toView:sender];
+}
+
+- (void)duck:(UIButton *)sender {
+    [self.duckFountainFirework addFireworks:^(FountainFireworkMaker * _Nonnull maker) {
+        maker.sparksCount = 5;
+        maker.sparkSize = CGSizeMake(20.f, 20.f);
     } toView:sender];
 }
 

@@ -25,6 +25,12 @@
 		D154AFA0230A9169008FF022 /* FountainSparkTrajectoryFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = D154AF9F230A9169008FF022 /* FountainSparkTrajectoryFactory.m */; };
 		D154AFA3230A9240008FF022 /* FountainFireworkAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = D154AFA2230A9240008FF022 /* FountainFireworkAnimator.m */; };
 		D154AFA6230A94BF008FF022 /* FountainFireworkController.m in Sources */ = {isa = PBXBuildFile; fileRef = D154AFA5230A94BF008FF022 /* FountainFireworkController.m */; };
+		D154AFAA230AA1E5008FF022 /* PusheenSparkViewFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = D154AFA9230AA1E5008FF022 /* PusheenSparkViewFactory.m */; };
+		D154AFAD230AA3F8008FF022 /* PusheenFountainFirework.m in Sources */ = {isa = PBXBuildFile; fileRef = D154AFAC230AA3F8008FF022 /* PusheenFountainFirework.m */; };
+		D154AFB0230AA4A6008FF022 /* PusheenFountainFireworkController.m in Sources */ = {isa = PBXBuildFile; fileRef = D154AFAF230AA4A6008FF022 /* PusheenFountainFireworkController.m */; };
+		D154AFB4230AA659008FF022 /* DuckSparkViewFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = D154AFB3230AA659008FF022 /* DuckSparkViewFactory.m */; };
+		D154AFB7230AA6A4008FF022 /* DuckFountainFirework.m in Sources */ = {isa = PBXBuildFile; fileRef = D154AFB6230AA6A4008FF022 /* DuckFountainFirework.m */; };
+		D154AFBA230AA70B008FF022 /* DuckFountainFireworkController.m in Sources */ = {isa = PBXBuildFile; fileRef = D154AFB9230AA70B008FF022 /* DuckFountainFireworkController.m */; };
 		D1AA22DD230643FA007E0988 /* SparkTrajectory.m in Sources */ = {isa = PBXBuildFile; fileRef = D1AA22DC230643FA007E0988 /* SparkTrajectory.m */; };
 		D1AA22E3230651E0007E0988 /* Firework.m in Sources */ = {isa = PBXBuildFile; fileRef = D1AA22E2230651E0007E0988 /* Firework.m */; };
 		D1AA22E92306562D007E0988 /* FireworkSpark.m in Sources */ = {isa = PBXBuildFile; fileRef = D1AA22E82306562D007E0988 /* FireworkSpark.m */; };
@@ -96,6 +102,18 @@
 		D154AFA2230A9240008FF022 /* FountainFireworkAnimator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FountainFireworkAnimator.m; sourceTree = "<group>"; };
 		D154AFA4230A94BF008FF022 /* FountainFireworkController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FountainFireworkController.h; sourceTree = "<group>"; };
 		D154AFA5230A94BF008FF022 /* FountainFireworkController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FountainFireworkController.m; sourceTree = "<group>"; };
+		D154AFA8230AA1E5008FF022 /* PusheenSparkViewFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PusheenSparkViewFactory.h; sourceTree = "<group>"; };
+		D154AFA9230AA1E5008FF022 /* PusheenSparkViewFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PusheenSparkViewFactory.m; sourceTree = "<group>"; };
+		D154AFAB230AA3F8008FF022 /* PusheenFountainFirework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PusheenFountainFirework.h; sourceTree = "<group>"; };
+		D154AFAC230AA3F8008FF022 /* PusheenFountainFirework.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PusheenFountainFirework.m; sourceTree = "<group>"; };
+		D154AFAE230AA4A6008FF022 /* PusheenFountainFireworkController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PusheenFountainFireworkController.h; sourceTree = "<group>"; };
+		D154AFAF230AA4A6008FF022 /* PusheenFountainFireworkController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PusheenFountainFireworkController.m; sourceTree = "<group>"; };
+		D154AFB2230AA659008FF022 /* DuckSparkViewFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DuckSparkViewFactory.h; sourceTree = "<group>"; };
+		D154AFB3230AA659008FF022 /* DuckSparkViewFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DuckSparkViewFactory.m; sourceTree = "<group>"; };
+		D154AFB5230AA6A4008FF022 /* DuckFountainFirework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DuckFountainFirework.h; sourceTree = "<group>"; };
+		D154AFB6230AA6A4008FF022 /* DuckFountainFirework.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DuckFountainFirework.m; sourceTree = "<group>"; };
+		D154AFB8230AA70B008FF022 /* DuckFountainFireworkController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DuckFountainFireworkController.h; sourceTree = "<group>"; };
+		D154AFB9230AA70B008FF022 /* DuckFountainFireworkController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DuckFountainFireworkController.m; sourceTree = "<group>"; };
 		D1AA22DB230643FA007E0988 /* SparkTrajectory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SparkTrajectory.h; sourceTree = "<group>"; };
 		D1AA22DC230643FA007E0988 /* SparkTrajectory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SparkTrajectory.m; sourceTree = "<group>"; };
 		D1AA22DE230644D4007E0988 /* SparkTrajectory+Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SparkTrajectory+Private.h"; sourceTree = "<group>"; };
@@ -259,6 +277,8 @@
 				D173288B230565B000A6DA99 /* SystemExtensions */,
 				D134946723055F9200C28EAD /* ClassicFirework */,
 				D154AF9A230A8EBF008FF022 /* FountainFirework */,
+				D154AFA7230AA17F008FF022 /* PusheenFirework */,
+				D154AFB1230AA617008FF022 /* DuckFirework */,
 			);
 			path = Fireworks;
 			sourceTree = "<group>";
@@ -293,6 +313,32 @@
 				D154AF9F230A9169008FF022 /* FountainSparkTrajectoryFactory.m */,
 			);
 			path = FountainFirework;
+			sourceTree = "<group>";
+		};
+		D154AFA7230AA17F008FF022 /* PusheenFirework */ = {
+			isa = PBXGroup;
+			children = (
+				D154AFA8230AA1E5008FF022 /* PusheenSparkViewFactory.h */,
+				D154AFA9230AA1E5008FF022 /* PusheenSparkViewFactory.m */,
+				D154AFAB230AA3F8008FF022 /* PusheenFountainFirework.h */,
+				D154AFAC230AA3F8008FF022 /* PusheenFountainFirework.m */,
+				D154AFAE230AA4A6008FF022 /* PusheenFountainFireworkController.h */,
+				D154AFAF230AA4A6008FF022 /* PusheenFountainFireworkController.m */,
+			);
+			path = PusheenFirework;
+			sourceTree = "<group>";
+		};
+		D154AFB1230AA617008FF022 /* DuckFirework */ = {
+			isa = PBXGroup;
+			children = (
+				D154AFB2230AA659008FF022 /* DuckSparkViewFactory.h */,
+				D154AFB3230AA659008FF022 /* DuckSparkViewFactory.m */,
+				D154AFB5230AA6A4008FF022 /* DuckFountainFirework.h */,
+				D154AFB6230AA6A4008FF022 /* DuckFountainFirework.m */,
+				D154AFB8230AA70B008FF022 /* DuckFountainFireworkController.h */,
+				D154AFB9230AA70B008FF022 /* DuckFountainFireworkController.m */,
+			);
+			path = DuckFirework;
 			sourceTree = "<group>";
 		};
 		D173288B230565B000A6DA99 /* SystemExtensions */ = {
@@ -440,6 +486,8 @@
 				D1AA22E3230651E0007E0988 /* Firework.m in Sources */,
 				D154AF96230A7F6A008FF022 /* FireworkSparkScheduler.m in Sources */,
 				D1AA2343230A4494007E0988 /* CircleColorSparkView.m in Sources */,
+				D154AFAA230AA1E5008FF022 /* PusheenSparkViewFactory.m in Sources */,
+				D154AFB7230AA6A4008FF022 /* DuckFountainFirework.m in Sources */,
 				D1AA22E92306562D007E0988 /* FireworkSpark.m in Sources */,
 				D1099C9A230566CB00E447DA /* PublicTool.m in Sources */,
 				D1349439230558C500C28EAD /* ViewController.m in Sources */,
@@ -449,11 +497,13 @@
 				D154AFA6230A94BF008FF022 /* FountainFireworkController.m in Sources */,
 				D154AF9D230A8EF2008FF022 /* FountainFirework.m in Sources */,
 				D1AA233723069018007E0988 /* ClassicFireworkAnimator.m in Sources */,
+				D154AFBA230AA70B008FF022 /* DuckFountainFireworkController.m in Sources */,
 				D1AA233A230695F0007E0988 /* ClassicSparkTrajectoryFactoryProtocol.m in Sources */,
 				D154AFA3230A9240008FF022 /* FountainFireworkAnimator.m in Sources */,
 				D1349444230558C700C28EAD /* main.m in Sources */,
 				D1AA233423068BC8007E0988 /* SparkViewFactory.m in Sources */,
 				D154AF92230A79C0008FF022 /* DemoVC.m in Sources */,
+				D154AFB0230AA4A6008FF022 /* PusheenFountainFireworkController.m in Sources */,
 				D1AA234C230A48C6007E0988 /* ImageSparkViewFactory.m in Sources */,
 				D154AFA0230A9169008FF022 /* FountainSparkTrajectoryFactory.m in Sources */,
 				D1AA2346230A44AF007E0988 /* CircleColorSparkViewFactory.m in Sources */,
@@ -461,7 +511,9 @@
 				D1AA233123068780007E0988 /* SparkViewAnimator.m in Sources */,
 				D1AA232E230686EB007E0988 /* SparkTrajectoryFactory.m in Sources */,
 				D1AA234023069D21007E0988 /* ClassicFirework.m in Sources */,
+				D154AFAD230AA3F8008FF022 /* PusheenFountainFirework.m in Sources */,
 				D1AA2349230A48A3007E0988 /* ImageSparkView.m in Sources */,
+				D154AFB4230AA659008FF022 /* DuckSparkViewFactory.m in Sources */,
 				D1349436230558C500C28EAD /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

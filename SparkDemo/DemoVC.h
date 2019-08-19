@@ -12,6 +12,8 @@
 typedef NS_ENUM(NSUInteger,SparkType) {
     SparkTypeClassic = 0,
     SparkTypeFountain,
+    SparkTypePusheen,
+    SparkTypeDuck,
 };
 
 NS_ASSUME_NONNULL_BEGIN

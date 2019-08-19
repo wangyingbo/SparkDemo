@@ -52,6 +52,8 @@
         NSArray *arr = @[
              [TitleItem create:SparkTypeClassic name:@"classic"],
              [TitleItem create:SparkTypeFountain name:@"fountain"],
+             [TitleItem create:SparkTypePusheen name:@"pusheen"],
+             [TitleItem create:SparkTypeDuck name:@"duck"],
                          ];
         _dataArray = arr;
     }
