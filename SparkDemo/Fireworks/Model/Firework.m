@@ -27,5 +27,13 @@
     return fireworkSpark;
 }
 
+- (Firework *)initFireworkWithOrigin:(CGPoint)origin sparkSize:(CGSize)sparkSize scale:(CGFloat)scale {
+    if (self = [super init]) {
+        self.origin = origin;
+        self.sparkSize = sparkSize;
+        self.scale = scale;
+    }
+    return self;
+}
 
 @end

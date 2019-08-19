@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface SparkTrajectory (Private)
+@interface SparkTrajectory ()
 @property (nonatomic, copy) NSArray<NSValue *> *points;
 @property (nonatomic, strong) UIBezierPath *path;
 @end

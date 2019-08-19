@@ -29,6 +29,10 @@
 		D1AA233A230695F0007E0988 /* ClassicSparkTrajectoryFactoryProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = D1AA2339230695F0007E0988 /* ClassicSparkTrajectoryFactoryProtocol.m */; };
 		D1AA233D230696BC007E0988 /* ClassicSparkTrajectoryFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = D1AA233C230696BC007E0988 /* ClassicSparkTrajectoryFactory.m */; };
 		D1AA234023069D21007E0988 /* ClassicFirework.m in Sources */ = {isa = PBXBuildFile; fileRef = D1AA233F23069D21007E0988 /* ClassicFirework.m */; };
+		D1AA2343230A4494007E0988 /* CircleColorSparkView.m in Sources */ = {isa = PBXBuildFile; fileRef = D1AA2342230A4494007E0988 /* CircleColorSparkView.m */; };
+		D1AA2346230A44AF007E0988 /* CircleColorSparkViewFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = D1AA2345230A44AF007E0988 /* CircleColorSparkViewFactory.m */; };
+		D1AA2349230A48A3007E0988 /* ImageSparkView.m in Sources */ = {isa = PBXBuildFile; fileRef = D1AA2348230A48A3007E0988 /* ImageSparkView.m */; };
+		D1AA234C230A48C6007E0988 /* ImageSparkViewFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = D1AA234B230A48C6007E0988 /* ImageSparkViewFactory.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,6 +100,14 @@
 		D1AA233C230696BC007E0988 /* ClassicSparkTrajectoryFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClassicSparkTrajectoryFactory.m; sourceTree = "<group>"; };
 		D1AA233E23069D21007E0988 /* ClassicFirework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClassicFirework.h; sourceTree = "<group>"; };
 		D1AA233F23069D21007E0988 /* ClassicFirework.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClassicFirework.m; sourceTree = "<group>"; };
+		D1AA2341230A4494007E0988 /* CircleColorSparkView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CircleColorSparkView.h; sourceTree = "<group>"; };
+		D1AA2342230A4494007E0988 /* CircleColorSparkView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CircleColorSparkView.m; sourceTree = "<group>"; };
+		D1AA2344230A44AF007E0988 /* CircleColorSparkViewFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CircleColorSparkViewFactory.h; sourceTree = "<group>"; };
+		D1AA2345230A44AF007E0988 /* CircleColorSparkViewFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CircleColorSparkViewFactory.m; sourceTree = "<group>"; };
+		D1AA2347230A48A3007E0988 /* ImageSparkView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageSparkView.h; sourceTree = "<group>"; };
+		D1AA2348230A48A3007E0988 /* ImageSparkView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageSparkView.m; sourceTree = "<group>"; };
+		D1AA234A230A48C6007E0988 /* ImageSparkViewFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageSparkViewFactory.h; sourceTree = "<group>"; };
+		D1AA234B230A48C6007E0988 /* ImageSparkViewFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageSparkViewFactory.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +161,14 @@
 		D1099C9C23056DBF00E447DA /* SparkViews */ = {
 			isa = PBXGroup;
 			children = (
+				D1AA2341230A4494007E0988 /* CircleColorSparkView.h */,
+				D1AA2342230A4494007E0988 /* CircleColorSparkView.m */,
+				D1AA2344230A44AF007E0988 /* CircleColorSparkViewFactory.h */,
+				D1AA2345230A44AF007E0988 /* CircleColorSparkViewFactory.m */,
+				D1AA2347230A48A3007E0988 /* ImageSparkView.h */,
+				D1AA2348230A48A3007E0988 /* ImageSparkView.m */,
+				D1AA234A230A48C6007E0988 /* ImageSparkViewFactory.h */,
+				D1AA234B230A48C6007E0988 /* ImageSparkViewFactory.m */,
 			);
 			path = SparkViews;
 			sourceTree = "<group>";
@@ -388,6 +408,7 @@
 			files = (
 				D1099CA02305762100E447DA /* SparkView.m in Sources */,
 				D1AA22E3230651E0007E0988 /* Firework.m in Sources */,
+				D1AA2343230A4494007E0988 /* CircleColorSparkView.m in Sources */,
 				D1AA22E92306562D007E0988 /* FireworkSpark.m in Sources */,
 				D1099CA6230640B000E447DA /* PKProtocolExtension.m in Sources */,
 				D1099C9A230566CB00E447DA /* PublicTool.m in Sources */,
@@ -398,10 +419,13 @@
 				D1AA233A230695F0007E0988 /* ClassicSparkTrajectoryFactoryProtocol.m in Sources */,
 				D1349444230558C700C28EAD /* main.m in Sources */,
 				D1AA233423068BC8007E0988 /* SparkViewFactory.m in Sources */,
+				D1AA234C230A48C6007E0988 /* ImageSparkViewFactory.m in Sources */,
+				D1AA2346230A44AF007E0988 /* CircleColorSparkViewFactory.m in Sources */,
 				D1AA233D230696BC007E0988 /* ClassicSparkTrajectoryFactory.m in Sources */,
 				D1AA233123068780007E0988 /* SparkViewAnimator.m in Sources */,
 				D1AA232E230686EB007E0988 /* SparkTrajectoryFactory.m in Sources */,
 				D1AA234023069D21007E0988 /* ClassicFirework.m in Sources */,
+				D1AA2349230A48A3007E0988 /* ImageSparkView.m in Sources */,
 				D1349436230558C500C28EAD /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

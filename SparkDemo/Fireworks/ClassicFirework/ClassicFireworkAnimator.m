@@ -52,7 +52,6 @@
     CAAnimationGroup *groupAnimation = [CAAnimationGroup animation];
     groupAnimation.animations = @[positionAnim, transformAnim, opacityAnim];
     groupAnimation.duration = duration;
-    
     // block回调
     [CATransaction setCompletionBlock:^{
         [spark.sparkView removeFromSuperview];

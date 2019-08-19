@@ -38,6 +38,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface Firework : NSObject<Firework>
 - (FireworkSpark *)spark:(NSInteger)index;
+
+- (__kindof Firework *)initFireworkWithOrigin:(CGPoint)origin sparkSize:(CGSize)sparkSize scale:(CGFloat)scale;
+
 @end
 
 NS_ASSUME_NONNULL_END

@@ -8,6 +8,7 @@
 
 #import "ClassicFireworkController.h"
 #import "ClassicFirework.h"
+#import "ClassicFireworkAnimator.h"
 
 @implementation ClassicFireworkMaker
 
@@ -28,17 +29,25 @@
 
 
 @interface ClassicFireworkController ()
+@property (nonatomic, strong) ClassicFireworkAnimator *sparkAnimator;
 @end
 
 @implementation ClassicFireworkController
 
-- (void)addFireworks:(void (^)(ClassicFireworkMaker * _Nonnull))maker {
+- (ClassicFireworkAnimator *)sparkAnimator {
+    if (!_sparkAnimator) {
+        ClassicFireworkAnimator *sparkAnimator = [[ClassicFireworkAnimator alloc] init];
+        _sparkAnimator = sparkAnimator;
+    }
+    return _sparkAnimator;
+}
+
+- (void)addFireworks:(void (^)(ClassicFireworkMaker * _Nonnull))maker toView:(nonnull UIView *)sourceView {
     ClassicFireworkMaker *_maker = [[ClassicFireworkMaker alloc] init];
     !maker?:maker(_maker);
-    NSParameterAssert(_maker.sourceView);
-    if (!_maker.sourceView) { return; }
+    NSParameterAssert(sourceView);
+    if (!sourceView) { return; }
     
-    UIView *sourceView = _maker.sourceView;
     UIView *superview = sourceView.superview;
     NSArray *origins = @[
      [NSValue valueWithCGPoint:CGPointMake(sourceView.frame.origin.x, sourceView.frame.origin.y)],
@@ -49,16 +58,31 @@
     
     for (NSValue *value in origins) {
         NSInteger idx = arc4random_uniform((uint32_t)(origins.count));
-        CGPoint origin = pointAdd(value.CGPointValue, [self randomChangeVector:_maker.maxVectorChange]);
+        CGPoint origin = pointAdd(((NSValue *)origins[idx]).CGPointValue, [self randomChangeVector:_maker.maxVectorChange]);
+        
+        Firework *firework = [self createFireworkWithOrigin:origin sparkSize:_maker.sparkSize scale:_maker.scale];
+        
+        for (NSInteger sparkIndex = 0; sparkIndex<_maker.sparksCount; sparkIndex++) {
+            FireworkSpark *spark = [firework spark:sparkIndex];
+            spark.sparkView.hidden = YES;
+            [superview addSubview:spark.sparkView];
+            
+            if (_maker.canChangeZIndex) {
+                CGFloat zIndexChange = arc4random_uniform(2) == 0?-1:+1;
+                spark.sparkView.layer.zPosition = sourceView.layer.zPosition + zIndexChange;
+            }else {
+                spark.sparkView.layer.zPosition = sourceView.layer.zPosition;
+            }
+
+            [self.sparkAnimator animate:spark duration:_maker.animationDuration];
+        }
+        
+        
     }
 }
 
-- (Firework *)createFirework {
-    ClassicFirework *firework = [[ClassicFirework alloc] init];
-    firework.origin;
-    firework.sparkSize;
-    firework.scale;
-    
+- (Firework *)createFireworkWithOrigin:(CGPoint)origin sparkSize:(CGSize)sparkSize scale:(CGFloat)scale {
+    ClassicFirework *firework = [[ClassicFirework alloc] initFireworkWithOrigin:origin sparkSize:sparkSize scale:scale];
     return firework;
 }
 

@@ -11,7 +11,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface Firework (Private)
+@interface Firework ()
 @property (nonatomic, assign) CGPoint origin;
 @property (nonatomic, assign) CGFloat scale;
 @property (nonatomic, assign) CGSize sparkSize;

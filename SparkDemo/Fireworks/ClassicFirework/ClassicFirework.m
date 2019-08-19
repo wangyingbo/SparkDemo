@@ -8,10 +8,10 @@
 
 #import "ClassicFirework.h"
 #import <UIKit/UIKit.h>
-#import "ClassicSparkTrajectoryFactoryProtocol.h"
+#import "ClassicSparkTrajectoryFactory.h"
 #import "SparkViewFactory.h"
 #import "PublicTool.h"
-
+#import "CircleColorSparkViewFactory.h"
 
 /**
  x     |     x
@@ -60,7 +60,7 @@ typedef NS_ENUM(NSUInteger, Quarter) {
 
 - (ClassicSparkTrajectoryFactoryProtocol *)classicTrajectoryFactory {
     if (!_classicTrajectoryFactory) {
-        ClassicSparkTrajectoryFactoryProtocol *classicTrajectoryFactory = [[ClassicSparkTrajectoryFactoryProtocol alloc] init];
+        ClassicSparkTrajectoryFactory *classicTrajectoryFactory = [[ClassicSparkTrajectoryFactory alloc] init];
         _classicTrajectoryFactory = classicTrajectoryFactory;
     }
     return _classicTrajectoryFactory;
@@ -68,7 +68,7 @@ typedef NS_ENUM(NSUInteger, Quarter) {
 
 - (SparkViewFactory *)sparkViewFactory {
     if (!_sparkViewFactory) {
-        SparkViewFactory *sparkViewFactory = [[SparkViewFactory alloc] init];
+        CircleColorSparkViewFactory *sparkViewFactory = [[CircleColorSparkViewFactory alloc] init];
         _sparkViewFactory = sparkViewFactory;
     }
     return _sparkViewFactory;
@@ -95,8 +95,9 @@ typedef NS_ENUM(NSUInteger, Quarter) {
 
 - (SparkView *)sparkView:(NSInteger)index {
     SparkView *sparkV;
-    sparkV = [self.sparkViewFactory create:[self sparkViewFactoryData:index]];
-    
+    if ([self.sparkViewFactory respondsToSelector:@selector(create:)]) {
+        sparkV = [self.sparkViewFactory create:[self sparkViewFactoryData:index]];
+    }
     return sparkV;
 }
 

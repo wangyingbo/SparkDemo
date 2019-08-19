@@ -24,6 +24,8 @@
     self.view.backgroundColor = [UIColor whiteColor];
     
     [self configUI];
+    
+    [self configData];
 }
 
 #pragma mark - configUI
@@ -54,7 +56,15 @@
 #pragma mark - configData
 
 - (void)configData {
-    self.fireworkController = [[ClassicFireworkController alloc] init];
+    
+}
+
+- (ClassicFireworkController *)fireworkController {
+    if (!_fireworkController) {
+        ClassicFireworkController *fireworkController = [[ClassicFireworkController alloc] init];
+        _fireworkController = fireworkController;
+    }
+    return _fireworkController;
 }
 
 #pragma mark - actions
@@ -62,8 +72,12 @@
 - (void)buttonClick:(UIButton *)sender {
     
     [self.fireworkController addFireworks:^(ClassicFireworkMaker * _Nonnull maker) {
-        maker.sourceView = sender;
-    }];
+        maker.sparksCount = 8;
+        maker.sparkSize = CGSizeMake(10, 10);
+        maker.fireworksCount = 1;
+        maker.animationDuration = .8;
+    } toView:sender];
+    
 }
 
 @end

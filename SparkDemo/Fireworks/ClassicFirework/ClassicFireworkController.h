@@ -16,7 +16,6 @@ NS_ASSUME_NONNULL_BEGIN
 @interface ClassicFireworkMaker : NSObject
 @property (nonatomic, assign) NSInteger fireworksCount;
 @property (nonatomic, assign) NSInteger sparksCount;
-@property (nonatomic, strong) UIView *sourceView;
 @property (nonatomic, assign) CGSize sparkSize;
 @property (nonatomic, assign) CGFloat scale;
 @property (nonatomic, assign) CGFloat maxVectorChange;
@@ -25,7 +24,7 @@ NS_ASSUME_NONNULL_BEGIN
 @end
 
 @interface ClassicFireworkController : NSObject
-- (void)addFireworks:(void(^)(ClassicFireworkMaker *maker))maker;
+- (void)addFireworks:(void(^)(ClassicFireworkMaker *maker))maker toView:(UIView *)sourceView;
 @end
 
 NS_ASSUME_NONNULL_END
