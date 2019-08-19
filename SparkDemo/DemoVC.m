@@ -8,9 +8,12 @@
 
 #import "DemoVC.h"
 #import "ClassicFireworkController.h"
+#import "FountainFireworkController.h"
+
 
 @interface DemoVC ()
-@property (nonatomic, strong) ClassicFireworkController *fireworkController;
+@property (nonatomic, strong) ClassicFireworkController *classicFirework;
+@property (nonatomic, strong) FountainFireworkController *fountainFirework;
 
 @end
 
@@ -58,12 +61,20 @@
     
 }
 
-- (ClassicFireworkController *)fireworkController {
-    if (!_fireworkController) {
-        ClassicFireworkController *fireworkController = [[ClassicFireworkController alloc] init];
-        _fireworkController = fireworkController;
+- (ClassicFireworkController *)classicFirework {
+    if (!_classicFirework) {
+        ClassicFireworkController *classicFirework = [[ClassicFireworkController alloc] init];
+        _classicFirework = classicFirework;
     }
-    return _fireworkController;
+    return _classicFirework;
+}
+
+- (FountainFireworkController *)fountainFirework {
+    if (!_fountainFirework) {
+        FountainFireworkController *fountainFirework = [[FountainFireworkController alloc] init];
+        _fountainFirework = fountainFirework;
+    }
+    return _fountainFirework;
 }
 
 #pragma mark - actions
@@ -89,7 +100,7 @@
 }
 
 - (void)classic:(UIButton *)sender {
-    [self.fireworkController addFireworks:^(ClassicFireworkMaker * _Nonnull maker) {
+    [self.classicFirework addFireworks:^(ClassicFireworkMaker * _Nonnull maker) {
         maker.sparksCount = 8;
         maker.sparkSize = CGSizeMake(10, 10);
         maker.fireworksCount = 1;
@@ -98,7 +109,10 @@
 }
 
 - (void)fountain:(UIButton *)sender {
-    
+    [self.fountainFirework addFireworks:^(FountainFireworkMaker * _Nonnull maker) {
+        maker.sparksCount = 10;
+        maker.sparkSize = CGSizeMake(10.f, 10.f);
+    } toView:sender];
 }
 
 @end

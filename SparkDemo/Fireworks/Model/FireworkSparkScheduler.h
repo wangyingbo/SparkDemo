@@ -7,11 +7,18 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "SparkViewAnimator.h"
+#import "FireworkSpark.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
+@interface Data : NSObject
+
+@end
+
 @interface FireworkSparkScheduler : NSObject
 
+- (void)schedule:(NSArray<FireworkSpark *> *)sparks presenterView:(UIView *)presenterView animator:(SparkViewAnimator *)animator animationDuration:(NSTimeInterval)animationDuration;
 @end
 
 NS_ASSUME_NONNULL_END

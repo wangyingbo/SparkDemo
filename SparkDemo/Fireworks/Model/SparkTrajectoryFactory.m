@@ -11,3 +11,9 @@
 @implementation SparkTrajectoryFactory
 
 @end
+
+
+
+@implementation DefaultSparkTrajectoryFactory
+
+@end

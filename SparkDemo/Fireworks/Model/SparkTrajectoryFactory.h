@@ -15,11 +15,17 @@ NS_ASSUME_NONNULL_BEGIN
 @protocol SparkTrajectoryFactory <NSObject>
 @end
 
+@interface SparkTrajectoryFactory : NSObject
+
+@end
+
 @protocol DefaultSparkTrajectoryFactory <SparkTrajectoryFactory>
 - (SparkTrajectory *)random;
 @end
 
-@interface SparkTrajectoryFactory : NSObject
+
+
+@interface DefaultSparkTrajectoryFactory : NSObject<DefaultSparkTrajectoryFactory>
 
 @end
 
