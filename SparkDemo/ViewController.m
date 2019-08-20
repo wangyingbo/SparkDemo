@@ -21,7 +21,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    NSLog(@"123");
     self.view.backgroundColor = [UIColor whiteColor];
     
     [self configTableView];
