@@ -108,8 +108,12 @@ typedef NS_ENUM(NSUInteger, Quarter) {
     CGPoint sparkOrigin = pointAdd(self.origin, vector);
     
     SparkTrajectory *trajectory = [self randomTrajectory:options];
-    trajectory = [trajectory scale:self.scale];
-    trajectory = [trajectory shift:sparkOrigin];
+    if ([trajectory respondsToSelector:@selector(scale:)]) {
+        trajectory = [trajectory scale:self.scale];
+    }
+    if ([trajectory respondsToSelector:@selector(shift:)]) {
+        trajectory = [trajectory shift:sparkOrigin];
+    }
     
     return trajectory;
 }
@@ -117,9 +121,14 @@ typedef NS_ENUM(NSUInteger, Quarter) {
 - (SparkTrajectory *)randomTrajectory:(FlipOptions)flipOptions {
     SparkTrajectory *trajectory = [[SparkTrajectory alloc]init];
     if (flipOptions & vertically) {
-        trajectory = [self.classicTrajectoryFactory randomBottomRight];
+        if ([self.classicTrajectoryFactory respondsToSelector:@selector(randomBottomRight)])
+        {
+            trajectory = [self.classicTrajectoryFactory randomBottomRight];
+        }
     }else {
-        trajectory = [self.classicTrajectoryFactory randomTopRight];
+        if ([self.classicTrajectoryFactory respondsToSelector:@selector(randomTopRight)]) {
+            trajectory = [self.classicTrajectoryFactory randomTopRight];
+        }
     }
     
     return flipOptions & horizontally ? [trajectory flip] : trajectory;

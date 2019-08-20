@@ -70,14 +70,14 @@
 
 - (void)timerDidFire {
     Data *d = [self.queue firstObject];
+    NSParameterAssert(d);
     if (!d) {
-        NSParameterAssert(d);
         [self cancel];
         return;
     }
     
+    NSParameterAssert(d.presenterView);
     if (!d.presenterView) {
-        NSParameterAssert(d.presenterView);
         [self cancel];
         return;
     }
