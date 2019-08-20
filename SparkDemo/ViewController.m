@@ -25,6 +25,7 @@
     self.view.backgroundColor = [UIColor whiteColor];
     
     [self configTableView];
+    NSLog(@"13:22");
 }
 
 #pragma mark - configUI
