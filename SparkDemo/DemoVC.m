@@ -39,7 +39,7 @@
     CGFloat h = 50.f;
     UIColor *color = [UIColor colorWithRed:0.42 green:0.58 blue:0.98 alpha:1];
     UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(FULL_SCREEN_WIDTH/2 - w/2, FULL_SCREEN_HEIGHT/2 - h/2, w, h)];
-    [button setTitle:@"🍦🍰🍎" forState:UIControlStateNormal];
+    [button setTitle:[NSString stringWithFormat:@"🍦🍰🍎"] forState:UIControlStateNormal];
     [button setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     button.layer.cornerRadius = 5;
     button.backgroundColor = color;
