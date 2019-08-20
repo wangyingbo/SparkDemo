@@ -2,6 +2,10 @@
 
 ### 烟花效果
 
+[下载地址 https://github.com/wangyingbo/SparkDemo](https://github.com/wangyingbo/SparkDemo)
+
+
+### 效果图
 
 ![gif](https://raw.githubusercontent.com/wangyingbo/SparkDemo/master/gif.gif)
 
