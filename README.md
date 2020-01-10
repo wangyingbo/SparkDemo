@@ -15,7 +15,7 @@
 原代码是用`swift`写的，作者在学习的过程中，用`Objective-C`实现了一遍。
 
 
-The original intention of this repo implementation is that the author saw a translated article on the Nuggets, and the demonstration effect is smooth and gorgeous, so I'm glad to learn it.
+The original intention of this repo implementation is that the author saw a translated article on the juejin, and the demonstration effect is smooth and gorgeous, so I'm glad to learn it.
 
 The original code is written with `swift`. In the process of learning, the author implemented it with `Objective-C`.
 
