@@ -11,6 +11,7 @@
 #import "FountainFireworkController.h"
 #import "PusheenFountainFireworkController.h"
 #import "DuckFountainFireworkController.h"
+
 @interface DemoVC ()
 @property (nonatomic, strong) ClassicFireworkController *classicFirework;
 @property (nonatomic, strong) FountainFireworkController *fountainFirework;
