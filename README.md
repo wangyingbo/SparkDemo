@@ -2,7 +2,7 @@
 
 ### 烟花效果
 
-[DOWNLOAD: https://github.com/wangyingbo/SparkDemo](https://github.com/wangyingbo/SparkDemo)
+[https://github.com/wangyingbo/SparkDemo](https://github.com/wangyingbo/SparkDemo)
 
 
 ### 效果图
